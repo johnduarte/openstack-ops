@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- include: "install-dependencies.yml"
+- include_tasks: "install-dependencies.yml"
 - name: Configure apt unattended upgrades
   template:
     src: "templates/apt-unattended-upgrades.j2"
